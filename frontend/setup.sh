@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "=== TimeTable Pro - Frontend Setup ==="
+echo ""
+echo "1. Install dependencies:"
+echo "   npm install"
+echo ""
+echo "2. (Optional) Set API URL in .env:"
+echo "   REACT_APP_API_URL=http://localhost:8000/api"
+echo ""
+echo "3. Start development server:"
+echo "   npm start"
+echo ""
+echo "Frontend will open at: http://localhost:3000"
