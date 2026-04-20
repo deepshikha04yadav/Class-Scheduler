@@ -4,6 +4,7 @@ from datetime import timedelta
 import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+<<<<<<< HEAD
 # SECRET_KEY = 'django-insecure-timetable-secret-key-change-in-production'
 # DEBUG = False
 SECRET_KEY = os.environ.get("SECRET_KEY")
@@ -13,6 +14,12 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
 ]
+=======
+SECRET_KEY = 'django-insecure-timetable-secret-key-change-in-production'
+DEBUG = False
+ALLOWED_HOSTS = ['class-scheduler-nu.vercel.app']
+
+>>>>>>> 6282e1333f320b0c2bcae122b9b49b7413d0e5ce
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
