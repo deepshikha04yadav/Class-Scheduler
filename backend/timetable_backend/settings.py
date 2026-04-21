@@ -13,10 +13,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG", "False") == "True"
 ALLOWED_HOSTS = [
     ".railway.app",
-    "localhost",
-    "127.0.0.1",
+    "class-scheduler-nu.vercel.app",
 ]
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -52,7 +50,7 @@ WSGI_APPLICATION = 'timetable_backend.wsgi.application'
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'timetable_db',
 #         'USER': 'root',
-#         'PASSWORD': 'user123',
+#         'PASSWORD': 'yourpassword',
 #         'HOST': 'localhost',
 #         'PORT': '3306',
 #         'OPTIONS': {'charset': 'utf8mb4', 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"},
@@ -103,6 +101,12 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "https://class-scheduler-nu.vercel.app",
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://class-scheduler-nu.vercel.app",
+]
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
 CORS_ALLOW_HEADERS = [
     'accept',
