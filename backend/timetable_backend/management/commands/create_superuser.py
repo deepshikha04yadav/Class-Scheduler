@@ -56,8 +56,3 @@ class Command(BaseCommand):
             )
 
 
-User = get_user_model()
-
-user = User.objects.get(email="admin@school.com")
-user.set_password("admin123")
-user.save()
