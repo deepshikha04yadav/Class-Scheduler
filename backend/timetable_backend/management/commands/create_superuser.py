@@ -54,3 +54,10 @@ class Command(BaseCommand):
                     "Set DJANGO_SUPERUSER_PASSWORD to use a fixed password on future runs."
                 )
             )
+
+
+User = get_user_model()
+
+user = User.objects.get(email="admin@school.com")
+user.set_password("admin123")
+user.save()
