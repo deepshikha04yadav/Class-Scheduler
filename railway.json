@@ -4,6 +4,6 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "cd backend && python manage.py migrate && python manage.py seed_data && gunicorn timetable_backend.wsgi:application --bind 0.0.0.0:$PORT"
+    "startCommand": "cd backend && python manage.py migrate && gunicorn timetable_backend.wsgi:application --bind 0.0.0.0:$PORT"
   }
 }
