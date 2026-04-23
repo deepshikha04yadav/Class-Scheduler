@@ -8,8 +8,8 @@ A full-stack timetable management system built with **Django REST Framework**, *
 
 | Service | Platform | URL |
 |---------|----------|-----|
-| Frontend | Vercel | `https://class-scheduler-nu.vercel.app/login` |
-| Backend API | Railway | `http://class-scheduler-pr.up.railway.app/` |
+| Frontend | Vercel | [Class-Scheduler](https://class-scheduler-nu.vercel.app/login) |
+| Backend API | Railway | [Backend](https://class-scheduler-pr.up.railway.app/) |
 | Database | PostgreSQL on Railway | Managed via Railway |
 
 ---
